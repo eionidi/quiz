@@ -14,7 +14,7 @@ quiz = Quiz.new(data_reader.questions, data_reader.answers)
 puts "Ответьте на вопросы"
 
 until quiz.finished?
-  puts quiz.ask_questions
+  puts quiz.current_questions
   input = ""
   input = STDIN.gets.chomp.downcase while input.empty?
   quiz.check_input(input)

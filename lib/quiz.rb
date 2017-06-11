@@ -9,7 +9,7 @@ class Quiz
     @score ||= 0
   end
 
-  def ask_questions
+  def current_question
     @iteration += 1
     @questions[@iteration - 1]
   end
